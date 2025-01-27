@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympic Store</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        
+
+        .laptop {
+            position: relative;
+            width: 70%;
+            max-width: 900px;
+            aspect-ratio: 16 / 9;
+            background: url('image.png') no-repeat center center; 
+            background-size: contain;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .content img {
+            width: 500px; 
+            margin-bottom: 20px;
+        }
+
+        .content h1 {
+            font-size: 4rem; 
+            color: #000;
+            margin-bottom: 20px;
+            white-space: nowrap; 
+        }
+
+        .content .btn {
+            padding: 15px 30px; 
+            font-size: 1.2rem; 
+            color: #fff;
+            background-color: #000;
+            border: 2px solid #fff;
+            border-radius: 25px; 
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .content .btn:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        @media (max-width: 768px) {
+            .laptop {
+                width: 90%; 
+                max-width: 100%; 
+            }
+
+            .content img {
+                width: 350px; 
+            }
+
+            .content h1 {
+                font-size: 2.5rem; 
+                margin-bottom: 15px;
+            }
+
+            .content .btn {
+                padding: 12px 25px; 
+                font-size: 1rem; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .laptop {
+                width: 100%; 
+            }
+
+            .content img {
+                width: 300px; 
+            }
+
+            .content h1 {
+                font-size: 2rem; 
+            }
+
+            .content .btn {
+                padding: 10px 20px; 
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="laptop">
+        <div class="content">
+            <img src="WEB DEVELOPMENT/logo.jpg" alt="Olympic Logo"> 
+            <h1>OLYMPIC COLLECTIONS</h1>
+            <a href="2nd.html" class="btn">Get Start</a>
+        </div>
+    </div>
+</body>
+</html>
